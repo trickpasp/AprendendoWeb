@@ -1,100 +1,243 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Fazendo um template bonito com materialize</title>
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
 	<!--Let browser know website is optimized for mobile-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
-<body>
-	<!-- Dropdown Structure -->
-	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="#!">Configurações</a></li>
-		<li><a href="#!">two</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">three</a></li>
-		<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-		<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-	</ul>
-	<nav>
-		<div class="nav-wrapper red accent-2">
-			<a href="#" class="brand-logo center">SGE</a>
-			<a href="#" data-activates="mobile-d" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="left hide-on-med-add-down">
-				<li><a href="#">Meus eventos</a></li>
-				<li><a href="#">Eventos em destaques</a></li>
-				<li><a href="#">Minhas inscrições</a></li>
-			</ul>
-			<ul class="right hide-on-med-add-down">				
-				<li><a href="#">Eventos em destaques</a></li>
-				<li>
-					<!-- Dropdown Trigger -->
-					<a class='dropdown-button btn red accent-2' href='#' data-activates='dropdown1'> Opções<i class="material-icons right">arrow_drop_down</i></a>
-				</li>
-				<li><a href="#"></a></li>
-			</ul>
-			<ul class="side-nav" id="mobile-d">
-				<li><a href="#">Meus eventos</a></li>
-				<li><a href="#">Eventos em destaques</a></li>
-				<li><a href="#">Minhas inscrições</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="container">
-		<!-- Page Content goes here -->
-		<div class="section">
-			<div class="row">
 
-				<div class="slider">
-					<ul class="slides">
-						<li>
-							<img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-							<div class="caption center-align">
-								<h3>This is our big Tagline!</h3>
-								<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+<body>
+	<header>
+
+		<nav>
+			<div class="nav-wrapper red accent-2">
+				<a href="#" class="brand-logo center">SGE</a>
+				<a href="#" data-activates="mobile-d" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="left hide-on-med-add-down">
+					<li><a href="#">Meus eventos</a></li>
+					<li><a href="#">Eventos em destaques</a></li>
+					<li><a href="#">Minhas inscrições</a></li>
+				</ul>
+				<ul class="right hide-on-med-add-down">
+					<li>
+						<!-- Dropdown Trigger -->
+						<a class='dropdown-button btn red accent-2' href='#' data-activates='dropdown1'> Opções<i class="material-icons right">arrow_drop_down</i></a>
+						<!-- Dropdown Structure -->
+						<ul id='dropdown1' class='dropdown-content'>
+							<li><a href="#!">Configurações</a></li>
+							<li><a href="#!">two</a></li>
+							<li class="divider"></li>
+							<li><a href="#!">three</a></li>
+							<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+							<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="side-nav" id="mobile-d">
+					<li><a href="#">Meus eventos</a></li>
+					<li><a href="#">Eventos em destaques</a></li>
+					<li><a href="#">Minhas inscrições</a></li>
+					<li>
+						<!-- Dropdown Trigger -->
+						<a class='dropdown-button btn red accent-2' href='#' data-activates='dropdown2'> Opções<i class="material-icons right">arrow_drop_down</i></a>
+						<!-- Dropdown Structure -->
+						<ul id='dropdown2' class='dropdown-content'>
+							<li><a href="#!">Configurações</a></li>
+							<li><a href="#!">two</a></li>
+							<li class="divider"></li>
+							<li><a href="#!">three</a></li>
+							<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+							<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<div class="container">
+					<!-- Page Content goes here -->
+					<div class="section">
+						<div class="row">
+							<div class="slider">
+								<ul class="slides">
+									<li>
+										<img src="https://lorempixel.com/580/250/nature/1">
+										<!-- random image -->
+										<div class="caption center-align">
+											<h3>Teste da grande tag line</h3>
+											<h5 class="light grey-text text-lighten-3">Nome do nosso pequeno slogan.</h5>
+										</div>
+									</li>
+									<li>
+										<img src="https://lorempixel.com/580/250/nature/2">
+										<!-- random image -->
+										<div class="caption left-align">
+											<h3>Alinhamento a esquerda</h3>
+											<h5 class="light grey-text text-lighten-3">Nosso pequeno slogan</h5>
+										</div>
+									</li>
+									<li>
+										<img src="https://lorempixel.com/580/250/nature/3">
+										<!-- random image -->
+										<div class="caption right-align">
+											<h3>Alinhamento a direita</h3>
+											<h5 class="light grey-text text-lighten-3">Nosso pequeno slogan</h5>
+										</div>
+									</li>
+									<li>
+										<img src="https://lorempixel.com/580/250/nature/4">
+										<!-- random image -->
+										<div class="caption center-align">
+											<h3>Nossa grande imagem</h3>
+											<h5 class="light grey-text text-lighten-3">Nosso pequeno slogan</h5>
+										</div>
+									</li>
+								</ul>
 							</div>
-						</li>
-						<li>
-							<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-							<div class="caption left-align">
-								<h3>Left Aligned Caption</h3>
-								<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						</div>
+
+					</div>
+				</div>
+				<div class="section">
+					<div class="row">
+						<div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+							<div class="row">
+
+								<div class="col s12 m3">
+									<div class="card">
+										<div class="card-image">
+											<img src="img/sample-1.jpg">
+											<span class="card-title">Meu titulo</span>
+										</div>
+										<div class="card-content">
+											<p>Exemplo de um cartão</p>
+										</div>
+										<div class="card sticky-action">
+											<div class="card-action">
+												<a href="#">Meu link vai</a>
+											</div>
+											<div class="card-reveal">
+												<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+												<p>Here is some more information about this product that is only revealed once clicked on.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m3">
+									<div class="card">
+										<div class="card-image">
+											<img src="img/sample-1.jpg">
+											<span class="card-title">Meu titulo</span>
+										</div>
+										<div class="card-content">
+											<p>Exemplo de um cartão</p>
+										</div>
+										<div class="card sticky-action">
+											<div class="card-action">
+												<a href="#">Meu link vai</a>
+											</div>
+											<div class="card-reveal">
+												<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+												<p>Here is some more information about this product that is only revealed once clicked on.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m3">
+									<div class="card">
+										<div class="card-image">
+											<img src="img/sample-1.jpg">
+											<span class="card-title">Meu titulo</span>
+										</div>
+										<div class="card-content">
+											<p>Exemplo de um cartão</p>
+										</div>
+										<div class="card sticky-action">
+											<div class="card-action">
+												<a href="#">Meu link vai</a>
+											</div>
+											<div class="card-reveal">
+												<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+												<p>Here is some more information about this product that is only revealed once clicked on.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m3">
+									<div class="card">
+										<div class="card-image">
+											<img src="img/sample-1.jpg">
+											<span class="card-title">Meu titulo</span>
+										</div>
+										<div class="card-content">
+											<p>Exemplo de um cartão</p>
+										</div>
+										<div class="card sticky-action">
+											<div class="card-action">
+												<a href="#">Meu link vai</a>
+											</div>
+											<div class="card-reveal">
+												<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+												<p>Here is some more information about this product that is only revealed once clicked on.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
 							</div>
-						</li>
-						<li>
-							<img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-							<div class="caption right-align">
-								<h3>Right Aligned Caption</h3>
-								<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-							</div>
-						</li>
-						<li>
-							<img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-							<div class="caption center-align">
-								<h3>This is our big Tagline!</h3>
-								<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-							</div>
-						</li>
-					</ul>
+
+						</div>
+					</div>
 				</div>
 
+
 			</div>
 		</div>
-		<div class="section">
+	</main>
+
+	<footer class="page-footer red accent-2">
+		<div class="container">
 			<div class="row">
-				
-
-
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
 
-	</div>
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
 </body>
+
 </html>
